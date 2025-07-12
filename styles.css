@@ -1,0 +1,137 @@
+/* Reset default spacing */
+body, h1, h2, p, label, select, input, button, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background and font */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf6e3;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Main container */
+.container {
+  max-width: 640px;
+  width: 100%;
+  background: #ffffff;
+  padding: 24px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Section labels and inputs */
+.selectors label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+select,
+input[type="text"] {
+  margin-top: 6px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fdfdfd;
+  transition: border-color 0.2s;
+}
+
+select:focus,
+input[type="text"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6c63ff;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #574fd8;
+}
+
+/* Generate button styling */
+#generateBtn {
+  display: block;
+  margin: 20px auto;
+  font-size: 1.1em;
+  background-color: #28a745;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#generateBtn:hover {
+  background-color: #218838;
+}
+
+/* Story output area */
+.story-area {
+  margin-top: 30px;
+}
+
+.story-area h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  min-height: 120px;
+  background-color: #f9f9f9;
+}
+
+/* Copy/Clear actions */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.actions button {
+  background-color: #ffb703;
+  color: #333;
+}
+
+.actions button:hover {
+  background-color: #f4a100;
+}
+
+/* Hidden custom input fields */
+.hidden {
+  display: none;
+}

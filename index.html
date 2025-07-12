@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Story Builder Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Story Builder Game ✨</h1>
+
+    <div class="selectors">
+      <!-- Character -->
+      <label>👤 Character:
+        <select id="character" onchange="toggleInput('character')"></select>
+        <input type="text" id="characterInput" placeholder="Enter custom character" class="hidden">
+        <button onclick="randomize('character')">🎲</button>
+      </label>
+
+      <!-- Setting -->
+      <label>🌍 Setting:
+        <select id="setting" onchange="toggleInput('setting')"></select>
+        <input type="text" id="settingInput" placeholder="Enter custom setting" class="hidden">
+        <button onclick="randomize('setting')">🎲</button>
+      </label>
+
+      <!-- Object -->
+      <label>🧰 Object:
+        <select id="object" onchange="toggleInput('object')"></select>
+        <input type="text" id="objectInput" placeholder="Enter custom object" class="hidden">
+        <button onclick="randomize('object')">🎲</button>
+      </label>
+    </div>
+
+    <button id="generateBtn">📝 Generate Story</button>
+
+    <div class="story-area">
+      <h2>📖 Your Story:</h2>
+      <textarea id="storyOutput" rows="6" placeholder="Your story will appear here..."></textarea>
+      <div class="actions">
+        <button onclick="copyStory()">📋 Copy</button>
+        <button onclick="clearStory()">🧹 Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
