@@ -1,2 +1,2 @@
 # StoryGenerator
-Give your required charcter, a place and an object.Gnereate a random story for yourself.
+Give your required character, a place and an object.Generate a random story for yourself.
